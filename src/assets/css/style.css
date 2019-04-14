@@ -1,0 +1,1493 @@
+
+@font-face{ 
+	font-family:customawasome; 
+	src:url('../fonts/fontawesome-webfont.ttf');
+}
+
+@font-face{ 
+	font-family:roboto-regular; 
+	src:url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face{ 
+	font-family:roboto-light; 
+	src:url('../fonts/Roboto-Light.ttf');
+}
+
+@font-face{ 
+	font-family:roboto-thin; 
+	src:url('../fonts/Roboto-Thin.ttf');
+}
+
+@font-face{ 
+	font-family:roboto-medium; 
+	src:url('../fonts/Roboto-Medium.ttf');
+}
+
+@font-face{ 
+	font-family:roboto-black; 
+	src:url('../fonts/Roboto-Black.ttf');
+}
+
+@font-face{ 
+	font-family:roboto-bold; 
+	src:url('../fonts/Roboto-Bold.ttf');
+}
+
+@font-face{ 
+	font-family:roboto-condensed; 
+	src:url('../fonts/Roboto-Condensed.ttf');
+}
+
+@font-face{ 
+	font-family:roboto-boldCondensed; 
+	src:url('../fonts/Roboto-Condensed.ttf');
+}
+
+
+body{
+	margin:0px; 
+	padding:0px;
+	font-family:roboto-regular; 
+	font-size:14px;
+}
+
+.mainbackground{
+	overflow: hidden;
+	width:100%; 
+	margin: 0 auto;
+	height:900px;  
+	color:#e1e1e1; 
+	padding-top:90px; 
+	background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#userInfo .mainbackground { padding-top:0px;}
+
+.maincontainer {
+	margin: 0 auto;
+    width: 300px;
+    height: auto;
+    background: #FFF;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 2px 3px rgba(0,0,0,.2);
+}
+
+.logo{    
+	display: block;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+	background-color:rgba(0,0,0,0.3);
+    border-radius: 100px;
+    position: relative;
+	top:-53px;
+}
+
+.logo img {
+	position: relative;
+    top: 0px;
+	width:100px;
+	height:100px;
+}
+
+.btn-close {
+	display: inline-block;
+    float: right;
+    position: relative; 
+	right: -16px;
+    top: -16px;
+}
+
+.correctsign, .wrongsign, .eyesign {
+	font-family: customawasome;
+    font-size: 12px;
+	right: 0;
+    position: relative;
+    display: inline-block;
+    float: right;
+	top: 15px;
+}
+
+.correctsign { color:#67e83a; }
+
+.wrongsign { color:#ed1c24; } 
+
+.eye-icon { opacity: 0.6;}
+
+.eye-icon:hover { opacity: 1;}
+
+.buttoncustom{
+	width:90%; 
+	line-height:30px;  
+	border-radius:5px;
+	border: 2px solid #fff; 
+	text-align:center; 
+	font-size:14px; 
+	color:#fff; 
+	margin: 0 auto; 
+	background-color:rgba(0,0,0,0.2);  
+	transition-duration: 0.4s;
+}
+
+.buttoncustom:hover{background-color: #ed1c24; color: #fff;}
+
+.check {margin: 10px 0;}
+
+.check .checkinfo {
+	position: relative; 
+	display: inline-flex;
+	margin: 10px 0;
+	color:#fff;
+}
+
+.withoutpassword{
+	margin: 16px 0 0 32px; 
+	line-height:15px; 
+	color:#000; 
+	font-size:12px; 
+	font-weight:bold;
+	width:136px; 
+	font-family:roboto-regular;
+	width:133px;
+}
+
+.forgetpassword{
+	margin: 0 0 0 0; 
+	font-family:roboto-regular; 
+	font-size:12px; 
+	font-weight:bold; 
+	color:#000; 
+	float:left; 
+	width:98px;
+}
+
+.remember:: before{border: 1px solid #ed1c24;}
+
+
+.link-bottom {display: block; margin-bottom: 20px;}
+
+.link-bottom ul {
+	list-style-type: none;
+	width: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+.link-bottom ul li{
+	display: inline-block;
+	float: right;
+	font-size: 12px;
+	width: 49%;
+	text-align: left;
+}
+
+.link-bottom ul li:first-child {text-align: right;}
+
+.link-bottom ul li a{color: #076c98; text-decoration: none;}
+
+.link-bottom ul li a:hover{color: #fff;}
+
+
+/*  floating label */
+
+.email, .password  { 
+	position:relative; 
+	margin-bottom: 35px;
+	border-bottom:1px solid #fff;
+}
+
+.password { margin-bottom: 45px;}
+
+.inputMaterialone {
+	color: #fff;
+	font-size:15px;
+	display:block;
+	width:100%;
+	border:none;
+	background: none;
+	padding: 5px 0;
+}
+
+.inputMaterialone:focus {outline:none;}
+
+input [type="password"] {color: #000;}
+
+.error { 
+	color: #ED1C24; 
+	font-size:10px;
+	position: absolute;
+	display: block;
+}
+.error p { margin-top: 5px; }
+
+/* LABEL ======================================= */
+
+label {
+	color:#fff; 
+	font-size:14px;
+	font-weight:normal;
+	position:relative;
+	pointer-events:none;
+	top:0px;
+	transition:0.3s ease all; 
+	-moz-transition:0.3s ease all; 
+	-webkit-transition:0.3s ease all;
+}
+
+#login .email label {position: absolute; top: 15px; color:#fff;}
+
+#login .password label {position: absolute; top: 15px; color:#fff;}
+
+/* active state */
+.inputMaterialone:focus ~ label, .inputMaterialone:valid ~ label {top:-5px; font-size:12px; color: #076c98; left: -1px;}
+
+#login .inputMaterialone:focus ~ label, #login .inputMaterialone:valid ~ label {top:-5px; font-size:12px; color: #076c98; left: -1px;}
+
+/*------------login checked css-----------*/
+
+/* Base for label styling */
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+	position: relative;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	font-size: 12px;
+	color:#fff;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+	content: '';
+	position: absolute;
+	left: -17px; 
+	top: 0;
+	width: 13px; 
+	height: 13px;
+	border: 1px solid #ccc;
+	background: #fff;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+}
+
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+	content: '';
+	position: absolute;
+	top: 2px; 
+	left: -15px;
+	font-family: customawasome;
+	font-size: 11px;
+	color: #000;
+	transition: all .2s;
+}
+
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+	opacity: 0;
+	transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {opacity: 1; transform: scale(1);}
+
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+	box-shadow: none;
+	border-color: #bbb;
+	background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {color: #999;}
+
+[type="checkbox"]:disabled + label {color: #aaa;}
+
+.maindiv {margin-top:-30px; padding: 20px;}
+
+
+/*--------------------Basic Information page css--------------------*/
+
+.info-container {
+    margin: 0 auto;
+    width: 600px;
+    height: auto;
+    background: #FFF;
+    background-color: #fff;
+    border-radius: 5px;
+	box-shadow: 0 0 0 0 rgba(0,0,0,0.2), 0 2px 3px rgba(0,0,0,.2);
+}
+
+.info-form {    
+	overflow: auto;
+    height: 500px;
+    width: 94%;
+    margin: 20px auto 10px auto;
+    padding: 20px 10px;
+}
+
+#basic-info, #description-info, #familyRelative, #work, .academic, .myContact, .myInterest { padding-top: 20px; }
+
+#user-info .btn-close { right: 0px; top: 0px; }
+
+.input {
+	color: #000;
+	display:block;
+	width:100%;
+	border:none;
+	background: none;
+	border-bottom: 1px solid #000;
+	border-radius: 0;
+}
+
+.label {
+	color:#000; 
+	font-size:15px;
+	font-weight:normal;
+	position:absolute;
+	pointer-events:none;
+	top:0;
+	padding: 0;
+	transition:0.2s ease all; 
+	-moz-transition:0.2s ease all; 
+	-webkit-transition:0.2s ease all;
+}
+
+.fname, .lname, .nickname, .bday, .nationality, .emailid, .mobilenumber, .placeslived, .language, .lifeEvent, 
+.homeAddress, .houseNumber, .streetName, .landmarkName, .cityName, .stateName, .phoneAddress, .emailAddress, .chatid, .companyName, .designation, .companyAddress, .websitelink {
+	display: inline-block;
+    width: 48%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.language, .lifeEvent, .homeAddress, .phoneAddress, .emailAddress, .chatid, .companyName, .designation, .companyAddress, .websitelink { width: 100%; }
+
+
+.bday {float: right; top: -4px;}
+
+.mobilenumber {top: -4px;}
+
+.bday input {
+	border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+	background: none;
+	margin-left: 0;
+}
+
+.bday label { top: -10px; color: #000;}
+
+.info-form .bday .check { position: absolute; margin: 5px 0 0 0;}
+
+.info-form .bday .check .checkinfo { margin: 0;}
+
+.info-form .bday .check .checkinfo label { color: #000;}
+
+.fname, .nickname, .emailid, .nationality, .houseNumber, .landmarkName, .stateName { float: left;}
+
+#gender { float: left;}
+
+.lname, .mobilenumber, .placeslived {float: right}
+
+.input:focus { outline: none;}
+
+.houseNumber, .streetName, .landmarkName, .cityName, .stateName {width:49%; margin: 10px 0 10px 0;}
+
+.streetName, .cityName {margin-left: 2%;}
+
+/*---------input text top animation -------------*/
+.input:focus ~ label, .input:valid ~ label {
+	 color: #4abdac; 
+	 font-size:12px;
+	 top: -15px;
+}
+
+.input-tag {    
+	margin: 0;
+    font-size: 10px;
+    color: #828282;
+    font-family: roboto-regular;
+}
+
+/*.input:focus {border-bottom: 5px solid red;}*/
+
+.awsome_input_border{
+    display: inline-block;
+    width: 0%;
+    height: 3px;
+    background: #4abdac;
+    position: relative;
+    top: 0px;
+    transition: bottom ease-in-out .15s;
+	transition-timing-function: cubic-bezier(1, 1, 1, 10);
+}
+
+.input:focus ~ .awsome_input_border{width:100%; top:-3px; display: inline-block;}
+
+.icon-menu {
+	background-color: #4abdac;
+	height: auto;
+	padding: 10px 20px;
+	border-radius: 5px 5px 0 0;
+}
+
+.info-heading {
+	font-weight:normal;
+	color: #fff;
+	text-align: center;
+}
+
+.icon-menu ul { 
+	list-style-type: none; 
+	padding: 0; 
+	margin: 0;
+    overflow: scroll;
+    height: auto;
+    width: 100%;
+    display: inline-flex;
+}
+
+.icon-menu .icon-bg {
+	height: 46px;
+    width: 46px;
+    margin: 0 9px;
+    background-color: #002d40;
+	border: 3px solid #fff;
+    border-radius: 50%;
+    float: left;
+	box-sizing: content-box;
+}
+
+.basic-info-icon {
+	height: 46px;
+    width: 46px;
+	position: sticky;
+}
+
+/*-------------visibility popup css ----------------*/
+
+.dropbtn {
+    background-image: url("../img/user_info_icon/show-hide-icon.png");
+	background-repeat: no-repeat; 
+	background-size: 5px 20px;
+	height: 20px;
+	width: 5px;
+    border: none;
+    cursor: pointer;
+	background-color: #fff;
+	padding-left: 1px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-image: url("../img/user_info_icon/show-hide-active-icon.png");
+	outline: none;
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+	top: -10px;
+    float: right;
+    right: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	right: 0;
+	padding: 10px;
+}
+
+.dropdown-content p { margin: 0; padding: 2px 0; }
+
+.dropdown-content p:hover { background-color: #eaeaea; }
+
+.dropdown-content a {
+    font-size: 14px;
+    line-height: 14px;
+    color: #757575;
+    padding: 0 16px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    top: -4px;
+}
+
+.dropdown-content a:hover { color: #000; }
+
+.show { display:block;}
+
+.visibilityInput { height: 18px; width: 18px; }
+
+/* date picker elements */
+
+.datepick {
+	display: inline-block;
+    position: relative;
+    width: 100%;
+	margin-bottom: 15px;
+}
+
+.datepick:after {
+	content: "\2807";
+    position: absolute;
+    width: 10px;
+    right: 0;
+    top: -11px;
+    font-size: 1.7em;
+    color: #8d8d8d;
+}
+
+input::-webkit-calendar-picker-indicator {display: block;}
+
+datalist {display: none;}
+
+.bday .dropdown {top: -5px;}
+
+.anniversary .dropdown {top: -5px;}
+
+.select {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+    float: left;
+}
+
+/* SELECT - Normal State */
+.select select {
+	font-size: 15px;
+	display: inline-block;
+	width: 100%;
+	padding-bottom: 2px;
+	cursor: pointer;
+	border: 0;
+	outline: 0;
+	border-bottom: 1px solid #333;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: none;
+	color: #000;
+	border-radius: 0;
+}
+
+
+/* SELECT - Arrow */
+.select:before {
+    content: "\f107";
+    font-family: customawasome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-decoration: inherit;
+	color: #000;
+    position: absolute;
+    top: -2px;
+    right: 20px;
+	pointer-events: none;
+}
+
+/* SELECT - Disabled */
+.select select:disabled { pointer-events: none; opacity: .5; }
+
+.select:nth-child(2) { margin: 0 5%;}
+
+.textmsg {color: #000;}
+
+#gender, #relationship, .anniversary {
+	display: inline-block;
+	width: 32%;
+	position: relative;
+	margin-bottom: 40px;
+	border-radius: 0;
+}
+
+#gender .select{ width: 100%; }
+
+#relationship { top: -3px; border-radius: 0;}
+
+#relationship .select {margin: 0 6%; width: 100%; }
+
+.anniversary {float: right; width: 32%; top: -3px; }
+
+.anniversary form { width: 100%;}
+
+.anniversary input {
+	border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+	width: 99.7%;
+	background: none;
+}
+
+.anniversary label {top: -10px; color: #000;}
+
+.placeslived {top: -5px;}
+ 
+.spantext {color: #000;}
+
+.placeslived .spantext {line-height: 19px; font-size: 15px;}
+
+.addmark {
+	font-family: customawasome;
+    font-weight: normal;
+    font-size: 1em;
+    position: absolute;
+    right: 5px;
+    top: -3px;
+    color: #8d8d8d;
+}
+
+.placeslived .addmark {right: 20px;}
+
+.closeDiv {
+	display: inline;
+    position: relative;
+    right: 10px;
+    float: right;
+    top: 10px;
+}
+
+.closebtn {
+	font-family: customawasome;
+    font-weight: lighter;
+    font-size: 1.4em;
+    float: right;
+    right: 0;
+    color: #fff;
+}
+
+.bottomArea {
+	text-align: right;
+    border-top: 1px solid #828282;
+    background: #fff;
+	border-radius: 0 0 5px 5px;
+	padding: 15px 30px;
+}
+
+.btnsubmit, .btnAddRelation, .btnAddExp, .btnAddEdu {
+	outline: none;
+    color: #4abdac;
+    background: #fff;
+    padding: 0 20px;
+	font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 2px solid #4abdac;
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #4abdac;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+}
+
+.btnsubmit:hover,
+.btnsubmit:focus,
+.btnAddRelation:hover,
+.btnAddRelation:focus,
+.btnAddEdu:hover,
+.btnAddEdu:focus {
+	color: #fff;
+	outline: none;
+    box-shadow: inset 0 100px 0 0 #4abdac;
+}
+
+.btnsubmit:focus {box-shadow: inset 0 100px 0 0 #228879;}
+
+.btnAddRelation:focus {box-shadow: inset 0 100px 0 0 #228879;}
+
+.btnAddEdu:focus {box-shadow: inset 0 100px 0 0 #228879;}
+
+.btnAddRelation, .btnAddExp, .btnAddEdu { float: left;}
+
+
+
+/*-------------------- User Profile Description css-----------------*/
+
+.tagline, .expertise, .aboutMe, .workSummary, .linkWeb, .description, .awardsHonor, .activities, .specialization, .awardsHonor {
+	width: 100%;
+    height: auto;
+    position: relative;
+	margin-bottom: 40px;
+}
+
+.tagline label,
+.expertise label,
+.aboutMe label,
+.workSummary label {top: -5px; color: #000; font-size: 15px;}
+
+.tagline textarea,
+.expertise textarea,
+.aboutMe textarea,
+.workSummary textarea {resize: none; width:99%; border-radius: 4px;}
+
+.industry {
+	display: inline-block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+    border-radius: 0;
+}
+
+.industry .select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    float: left;
+}
+
+.industry label {
+	top: -18px;
+    color: #000;
+    font-size: 15px;
+}
+
+.industry .select select { font-size: 14px;}
+
+
+.linkWeb label {
+	top: -5px;
+    color: #000;
+	font-size: 15px;
+}
+
+.linkWeb textarea {resize: none; width:99%; border-radius: 4px;}
+
+
+/*-------------------- My Family and Relatives css-----------------*/
+
+textarea { outline: none; }
+
+textarea:focus { border-color: #4abdac }
+
+.memberName, .memberRelation, .relationName {
+	display: inline-block;
+    position: relative;
+	margin-bottom: 40px;
+	width: 32%;	
+}
+
+.relationName { float: right; top: 2px;}	
+
+.memberRelation {
+    margin: 0 1% 40px 1%;
+}
+
+/*-------------------- Work css-----------------*/
+
+.occupation {
+	display: inline-block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+    border-radius: 0;
+}
+
+.occupation .select .label { top: 0; font-weight: bold; position: relative;}
+
+.occupation .select:before { top: 16px; }
+
+.occupation .dropdown { top: 8px; }
+
+.experiance, .location, .weblink { width: 32%; display: inline-block; }
+
+.weblink { width: 34%; float: right; }
+
+.experiance { float: left; }
+
+.experiance .label:first-child { position: relative; top: -15px; font-weight: bold; }
+
+.location { margin: 0 1% 0 1%; }
+
+.companyName {
+	display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.exp-head, .home-head {     
+	width: 100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.label-exp {
+	color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    pointer-events: none;
+    top: 10px;
+}
+
+.position {
+	float: left;
+	width: 40%;
+    display: inline-block;
+}
+
+.startYear, .endYear, .current {
+	display: inline-block;
+    width: 20%;
+    position: relative;
+    border-radius: 0;
+	top: 0;
+    margin: 0 0 40px 1%;
+}
+
+.current-mob { display: none;}
+
+.startYear .select:before,
+.endYear .select:before {
+    top: 18px;
+}
+
+.startYear .select .label,
+.endYear .select .label {
+    font-weight: bold;
+	position: relative;
+}
+
+.position label {
+    font-weight: bold;
+	color: #000;
+	position: relative;
+}
+
+.current {
+	float: right;
+    width: 15%;
+    top: 20px;
+}
+
+.current .checkinfo { margin: 0; position: relative;
+    display: inline-flex;}
+
+.current label { color: #000;}
+
+.description { float: left; }
+
+.description label,
+.awardsHonor label,
+.activities label {
+    top: -5px;
+    color: #000;
+    font-size: 15px;
+}
+
+.description textarea {
+    resize: none;
+    width: 99%;
+    border-radius: 4px;
+}
+
+
+/*-------------Academic css-----------*/
+.instituteName, .degree, .fieldStudy, .skills {
+    display: inline-block;
+    width: 54%;
+    position: relative;
+    margin-bottom: 40px;
+    border-radius: 0;
+	float: left;
+    top: 19px;
+}
+
+.degree { width: 25%; margin-right: 2%;}
+
+.instituteName .label { top: -20px; font-weight: bold; }
+
+.degree .label { top: -20px; font-weight: bold; }
+
+.skills .label { top: -20px; font-weight: bold; }
+
+.instituteName form { width: 100%; }
+
+.instituteName form input,
+.degree form input { 
+	width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+.degree form input {height: 23px;}
+
+.skills { width: 46%; }
+
+.instituteName form input:focus { outline: none; }
+
+.academic .startYear { width: 22%; }
+
+.academic .endYear { width: 22%; float: right; }
+
+.academic .endYear .dropdown { top: 8px; }
+
+.activities, .specialization, .awardsHonor, .description { display: inline-block;} 
+
+.activities {margin-top: 30px;}
+
+.activities textarea,
+.specialization textarea,
+.awardsHonor textarea,
+.myContact textarea,
+.houseNumber textarea {
+    resize: none;
+    width: 99%;
+    border-radius: 4px;
+}
+
+.specialization label,
+.awardsHonor label,
+.homeAddress label,
+.companyAddress label,
+.houseNumber label {
+    top: -5px;
+    color: #000;
+    font-size: 15px;
+}
+
+
+
+/*-------------My Contact css-----------*/
+
+
+.position .companyName:after { top: 0; }
+
+/*---------------my interest css----------------*/
+
+
+.interestRow {
+	display: inline-block;
+    margin: 10px 0;
+}
+
+.imgContain {
+    position: relative;
+    width: 22.5%;
+	height: 70px;
+    margin: 5px 5px;
+	display: inline-block;
+}
+
+.imgContain:focus {border: 2px solid #000;}
+
+.middle {
+    width: 100%;
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.imgContain:hover .imgLabel {background-color: rgba(0, 0, 0, 0.7);}
+
+.imgLabel {
+    background-color: rgba(76, 175, 80, 0);
+    color: white;
+    font-size: 13px;
+    padding: 5px 0px;
+    text-align: center;
+    transition: .5s ease;
+}
+
+.interestRule {color: #000; float: left; text-align: left;}
+
+.interestRule h4 { margin: 5px 0; font: 16px/18px "roboto-regular"; }
+
+.interestRule p { margin: 5px 0; font: 12px/13px "roboto-regular";  color: #6f6f6f; }
+
+/* Style the tab */
+div.tab {overflow: hidden; margin: 0 auto;}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 7px 7px;
+	margin: 5px 7px 5px 0;
+    transition: 0.5s;
+    font-size: 14px;
+    border: 1px solid #4abdac;
+	color: #4abdac;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #4abdac;
+    border: 1px solid #4abdac;
+    color: #fff;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {background-color: #4abdac; color: #fff;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+	margin: 0 auto;
+}
+
+.tabcontent .interest-heading {
+	color: #12806f; 
+	font: 16px/18px roboto-bold, Arial, Helvetica, sans-serif; 
+	text-align: center;
+    letter-spacing: 1px;
+}
+
+.chosen-choices {display:  -webkit-inline-box; display: -moz-grid-line;}
+
+.chosen-container { border-bottom: 1px solid #000; width: 100% !important;}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+    position: absolute;
+    top: 0;
+    right: 3px;
+    display: block;
+    width: 9px !important;
+    height: 9px !important;
+    background: url(../img/dropdown-close-icon.png) 0 no-repeat !important;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+    background: url(../img/dropdown-close-icon-active.png) 0 no-repeat !important;
+}
+
+.chosen-container-multi .chosen-choices {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 5px;
+    width: 100%;    
+	height: 25px !important;
+    border-bottom: 1px solid #000 !important;
+	border: none !important;
+    background: none !important;
+    cursor: text;
+}
+
+.chosen-container-active .chosen-choices {border: none !important; box-shadow: none !important;}
+
+.chosen-container-multi .chosen-choices li.search-field input[type=text] { height: 0px !important; }
+
+.chosen-container-multi .chosen-choices li.search-choice {
+    position: relative;
+    margin: 0 5px 0 0 !important;
+    padding: 0 20px 0 5px;
+    border: 1px solid #aaa;
+    max-width: 100%;
+    border-radius: 3px;
+	height: 20px !important;
+    background-color: #eee;
+
+}
+
+/*-----------------home page css and animation css------------------*/
+.welcomepsn {
+	font-family:roboto-bold;
+	color: #000000;
+	font-size: 40px;
+	text-align: center;
+	padding: 70px 0 30px;
+	margin: 0;
+}
+
+.confirmingmesgbox {
+	width: 90%;
+	background-color: #5a912c;
+    margin: 0 auto;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+.confirmingmesgbox h2 {
+	text-align: center;
+	font-size: 18px;
+	font-family: roboto-light;
+	color: #f7f9f5;
+	margin: 10px 0;
+}
+
+.ninecirclebox {
+	text-align: center;
+	padding-top: 90px;
+	width: 100%;
+	margin: 0 auto;
+	margin: 0 14% 0 0;
+}
+
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	cursor: default;
+	-webkit-perspective: 900px;
+	-moz-perspective: 900px;
+	-o-perspective: 900px;
+	-ms-perspective: 900px;
+	perspective: 900px;
+}
+.ch-info{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.ch-info > div {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-position: center center;
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	-ms-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+	-webkit-transform-origin: 50% 0%;
+	-moz-transform-origin: 50% 0%;
+	-o-transform-origin: 50% 0%;
+	-ms-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+}
+
+.ch-info .ch-info-front {box-shadow: inset 0 0 0 16px rgba(0,0,0,0.3);}
+
+.ch-info .ch-info-back {
+	-webkit-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	-moz-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	-o-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	-ms-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	background: #5a912c;
+	opacity: 0;
+}
+
+.ch-img-1 {
+	background-image: url(../img/home_page/1Equates.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.ch-img-2 {
+	background-image: url(../img/home_page/2Contributions.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.ch-img-3 {
+	background-image: url(../img/home_page/3Personal.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.ch-img-4 {
+	background-image: url(../img/home_page/4Near_and_Dear.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.ch-img-5 {
+	background-image: url(../img/home_page/5Work.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.ch-img-6 {
+	background-image: url(../img/home_page/6Community.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.ch-img-7 {
+	background-image: url(../img/home_page/7Library.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.ch-img-8 {
+	background-image: url(../img/home_page/8Rejuvenation.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.ch-img-9 {
+	background-image: url(../img/home_page/9Market.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 16px;
+	margin: 0 9px 5px;
+	padding: 60px 0 0 0;
+	font-family: roboto-medium;
+	text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+	color: #fff;
+    padding: 10px 5px;
+    margin: 0 20px;
+    font-size: 14px;
+    font-family: roboto-regular;
+    border-top: 1px solid #fff;
+}
+
+.ch-info p span {font-size: 18px;}
+
+.ch-info p a {
+	display: block;
+	color: #fff;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: roboto-medium;
+}
+
+.ch-info p a:hover {color: #fff222; color: rgba(255,242,34, 0.8);}
+
+.ch-item:hover .ch-info-front {
+	-webkit-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	-moz-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	-o-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	-ms-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	opacity: 0;
+}
+
+.ch-item:hover .ch-info-back {
+	-webkit-transform: rotate3d(1,0,0,0deg);
+	-moz-transform: rotate3d(1,0,0,0deg);
+	-o-transform: rotate3d(1,0,0,0deg);
+	-ms-transform: rotate3d(1,0,0,0deg);
+	transform: rotate3d(1,0,0,0deg);
+	opacity: 1;
+}
+
+.ch-grid {
+	margin: 0 auto;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {clear: both;}
+
+.ch-grid li {
+	width: 190px;
+	height: 190px;
+	display: inline-block;
+	margin: 0 40px 70px 0;
+}
+
+
+
+/*-----------media queries for iphone 6 plus---------------*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 736px)
+   {
+	
+	.inputMaterialone {width: 100%;}
+
+	.link-bottom {width: 100%;}
+
+	.link-bottom ul li:first-child {width: 45%;}
+	
+	.link-bottom ul li:nth-child(2) {width: 53%;}
+	
+	.fname, .lname, .nickname, .bday  { 
+		width: 100%; 
+		float: none; 
+		display: block;
+	}
+	
+	#gender, #relationship, .anniversary {
+		width: 100%;
+		float: left;
+		margin-bottom: 40px;
+		display: block;
+	}
+	
+	#gender .select { width: 100%;}
+	
+	#relationship .select { width: 100%; margin: 0; }
+	
+	.anniversary .select { width: 100%; }
+	
+	.emailid, .mobilenumber, .placeslived {     
+		width: 100%;
+		display: block;
+		float: none; 
+	}
+	
+	.nationality { 
+		margin-top: 0; 
+		width: 100%;
+		float: none;
+	}
+	
+	.placeslived, .bday, .mobilenumber, .anniversary, .placeslived, #relationship { top: 0; }
+	
+	.bottomArea {text-align: center; }
+	
+	.btnsubmit { right: 0; width: 40%; }
+	
+	.memberName, .memberRelation, .relationName, .experiance, .position, .weblink, .instituteName, .location, .houseNumber, .streetName, .landmarkName, .cityName, .stateName, .countryName, .contactNumaber, .memberName, .memberRelation, .relationName, .degree, .field-study, .skills
+	{ width: 100%; }
+	
+	.memberRelation, .memberName, .relationName { margin-bottom: 40px; }
+	
+	.relationName { float: none; }
+	
+	.location, .interestRow {margin: 0;}
+	
+	.exp-data .current { display: none;}
+	
+	.startYear, .endYear { margin: 0 0 40px 0; width: 49%; }
+	
+	.startYear { margin-right: 0.5%; }
+	
+	.academic .startYear, .academic .endYear { width: 49%; }
+	
+	.imgContain { width: 47%; margin: 1% !important; }
+	
+	.current-mob { display: block; top: -30px; position: relative; }
+	
+	.current-mob .checkinfo { margin: 0 0 10px; }
+	
+	.current-mob .checkinfo input[type=checkbox]{ margin: 0; }
+	
+	.current-mob .checkinfo label { color: #000; }
+	
+	.activities { margin-top: 0px;}
+	
+	div.tab button { float: left; width: 48%; }
+	
+	div.tab .tab-btn:nth-child(even) {margin: 5px 0 5px 7px;}
+	
+	.info-container {width: 90%;}
+	
+	.input { width: 100%; }
+	
+	.icon-menu .icon-bg { margin: 0 5px; height: 40px; width: 40px;}
+	
+	.basic-info-icon { height: 40px; width: 40px; }
+	
+	.info-container-bg {width:86%;}
+	
+	.contactName {width: 38%;display: block;}
+	
+	.contactInput {display: block; width: 60%; top: 1px;}
+	
+	.customContact {z-index: 99999; position: absolute; width: 100%;}
+	
+	.streetName, .cityName, .countryName, .memberRelation {margin-left: 0;}
+	
+	.current-mob [type="checkbox"]:not(:checked) + label, .current-mob [type="checkbox"]:checked + label {
+		left: 0;
+	}
+}
+
+
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 736px) and (orientation : landscape) {
+	
+	.link-bottom ul li:first-child {width: 45%;}
+	
+	.link-bottom ul li:nth-child(2) { width: 53%; }
+	
+	.imgContain { width: 47%; margin: 1% !important; }
+}
+
+
+/*----------media for only iphone4 and iphone5--------------*/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait){
+	
+	div.tab button { width: 100%; }
+	
+	div.tab .tab-btn:nth-child(even) { margin: 5px 0 5px 0;}
+}
+
+
+
+@media only screen and (min-device-width : 320px) and (orientation : landscape) {
+	.imgContain { width: 31.7%; margin: 0.5%; }
+}
+
+@media only screen and (min-device-width : 667px) and (orientation : landscape) {
+	.imgContain { width: 23.5%; margin: 0.5%; }
+}
+
+@media only screen and (min-device-width : 768px) and (orientation : landscape) {
+	.imgContain { 
+		position: relative;
+		width: 22.4%;
+		height: 70px;
+		margin: 5px 5px;
+		display: inline-block; 
+	}
+}
+
+/*------------css for only Mozilla Firefox----------*/
+@-moz-document url-prefix() {
+	
+	.email .inputMaterialone { padding: 2px 0; }
+	
+    .mobilenumber, .bday, .anniversary, .placeslived, #relationship {top: 0;}
+	
+	.anniversary { top: 4px; }
+	
+	textarea { outline: none; border: 1px solid #000; color: #000;}
+	
+	[type="checkbox"]:not(:checked) + label, [type="checkbox"]:checked + label {top: 5px; left: 4px; }
+	
+	[type="checkbox"]:not(:checked) + label::after, [type="checkbox"]:checked + label::after {top: 0;}
+	
+	.chosen-choices {display: -moz-grid-line;}
+
+}
+
+
+
+

@@ -1,0 +1,74 @@
+<div class="container-fluid backgroundcustom">
+	<div class="row">
+		<div class="mainbestcontainer">
+			<div class="psnsingupheading">PSN</div>
+            <div class="btn-close">
+                <img id="closebtn" src="assets/img/close-icon.png" width="30" height="32" />
+            </div>
+			<div class="slogansignup">A Complete World In Itself</div>
+            <div class="topdevider">
+                <img src="assets/img/topdevider.png" width="100%" height="5" alt="" />
+            </div>
+            
+            <div class="signupgroup">
+                <div class="group2 customh8" style="z-index: 111;" >
+	                <h6 class="customh6">Lets Confirm Your Mobile No & Email Id</h6>
+                    <h6>PSN helps you connect with and stay in touch with your professional network</h6>
+	                <div class="otpimg">
+                        <img src="assets/img/mobilesms.jpg" width="100%" />
+                    </div>
+
+                    <div class="emailsendotpmain">
+                        <span class="otpemailired"> </span>
+                        <span class="emailotp">Email send to </span>
+                    </div>
+
+                    <div class="emailsendotpmain">
+                        <div class="emailotptextboxmain">
+                            <input (keyup)="verifyEmailOtp(emailOtp.value)" type="Text" #emailOtp name="field1" id="field1" class="customcalander2" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="emailpanel">
+                        <div class="countdown-timer-wrapper">
+                            <div class="timer" id="countdown2"></div>
+                        </div>
+                        <span class="emailotp"></span>
+                        <div class="emailpanelnotice">Enter Code You Recieve In Your Email</div>
+                    </div>	
+                </div>
+
+                <div class="emailsendotpmain">
+                    <div class="emailsendotpmain">
+                        <span class="otpemailigreen">  </span>
+                        <span class="emailotp">Sms send to </span>
+                    </div>
+
+                    <div class="countdown-timer-wrapper" style="margin-bottom:-30px; position:relative; top:12px;">
+                        <div class="timer" id="countdown" #countdown></div>
+                    </div>
+                    <div class="emailotptextboxmain">
+                        <input type="Text" name="field2" id="field2" class="customcalander2" maxlength="20" style="outline: none;">
+                    </div>
+
+                    <div class="emailpanel">
+                        <div class="countdown-timer-wrapper"><div class="timer" id="countdown2"></div></div>
+                        <span class="emailotp"></span>
+                        <div class="smslnotice">Enter Code You Recieve In Your Mobile</div>
+                    </div>
+
+                    <div class="otpbuttonmainpanel">
+                        <div (click)="resendEmailOtp()" class="otpemailoptio sim-button button16 buttoncustom customsmalleffect">Resend Email OTP</div>
+                        <div class="otpemailoptiosms sim-button button16 buttoncustom customsmalleffect">Resend Mobile OTP</div>
+                    </div>
+                                
+                    <div class="otpbuttonmainpanel">
+                        <div (click)="goBack();" class="otpemailoptiosms sim-button button16 buttoncustom otpback">Back</div>
+                    </div>
+                                
+                </div>
+                <div style="width:100%; height:89px;">{{ otpRes | json }}</div>
+            </div>
+        </div>
+    </div>
+</div>

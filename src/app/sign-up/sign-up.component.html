@@ -1,0 +1,142 @@
+<div class="container-fluid backgroundcustom">
+	<div class="row">
+        <div class="mainbestcontainer" *ngIf="view.label != undefined">
+            <div class="psnsingupheading">{{ view.label.title }}</div>
+            <div class="btn-close"><img id="closebtn" src="assets/img/close-icon.png" width="30" height="32" /></div>
+            <div class="slogansignup">{{ view.label.tagline }}</div>
+            <div class="topdevider"><img src="assets/img/topdevider.png" width="100%" height="5" alt="" /></div>
+            
+            <form name="sign_up_form" (ngSubmit)="sf.form.valid && signUp()" #sf="ngForm"  novalidate>
+
+                <div class="signupgroup">
+                
+                    <div class="group2 custommargi">
+                        <span *ngIf="sf.submitted && !fn.valid" class="errorsign"></span>
+                        <span *ngIf="!sf.submitted || fn.valid">&nbsp;</span>
+                        <input [(ngModel)]="model.first_name" #fn="ngModel" name="first_name" class="inputMaterial" spellcheck="false" type="text" required >
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label id="p5" >{{ view['first-name']['label'] }}</label>
+                    </div>
+
+                    <div class="group2 custommargi">
+                        <span *ngIf="sf.submitted && !ln.valid" class="errorsign"></span>
+                        <span *ngIf="!sf.submitted || ln.valid">&nbsp;</span>
+                        <input [(ngModel)]="model.last_name" #ln="ngModel" name="last_name" class="inputMaterial" type="text" spellcheck="false" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>{{ view['last-name']['label'] }}</label>
+                    </div>
+
+                    <div class="group2 custommargi">
+                        <span *ngIf="sf.submitted && !email.valid" class="errorsign"></span>
+                        <span *ngIf="!sf.submitted || email.valid">&nbsp;</span>
+                        <input [(ngModel)]="model.email" #email="ngModel" name="email" class="inputMaterial" spellcheck="false" type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>{{ view['email']['label'] }}</label>
+                    </div>
+
+                    <div class="group2">
+                        <span *ngIf="sf.submitted && !mobile.valid" class="errorsign"></span>
+                        <span *ngIf="!sf.submitted || mobile.valid">&nbsp;</span>
+                        <input [(ngModel)]="model.mobile" #mobile="ngModel" name="mobile" class="inputMaterial" type="text" spellcheck="false" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>{{ view['mobile']['label'] }}</label>
+                    </div>
+
+                    <div class="group2">
+                        <span *ngIf="sf.submitted && !pwd.valid" class="errorsign"></span>
+                        <span *ngIf="!sf.submitted || pwd.valid">&nbsp;</span>
+                        <span class="eyesymbol"><img src="assets/img/eye-icon.png" width="21" height="11" /></span>
+                        <input [(ngModel)]="model.password" #pwd="ngModel" name="pwd" class="inputMaterial" type="password"  required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>{{ view['password']['label'] }}</label>
+                    </div>
+
+                    <div class="group2">
+                        <span *ngIf="sf.submitted && !cpwd.valid" class="errorsign"></span>
+                        <span *ngIf="!sf.submitted || cpwd.valid">&nbsp;</span>
+                        <span class="eyesymbol"><img src="assets/img/eye-icon.png" width="21" height="11" /></span>
+                        <input [(ngModel)]="model.password_confirmation" #cpwd="ngModel" name="cpwd" class="inputMaterial" type="password" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>{{ view['confirm-password']['label'] }}</label>
+                    </div>
+
+                    <div class="group2">
+                        <span *ngIf="sf.submitted && !dob.valid" class="errorsign"></span>
+                        <span *ngIf="!sf.submitted || dob.valid">&nbsp;</span>
+                        <div class="input-group date form_date " data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd" >
+                            <input  #dob name="dob" class="form-control" size="16" type="text"  readonly />
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                            <label id="borthdaylabel">{{ view['dob']['label'] }}</label>
+                        </div>
+                        <input type="hidden" id="dtp_input2" value="" /><br/>
+                    </div>
+                    
+                    <div class="singupgender">
+                        <div class="group2">
+                            <span *ngIf="sf.submitted && !gender.valid" class="errorsign"></span>
+                            <span *ngIf="!sf.submitted || gender.valid">&nbsp;</span>
+                            <label id="p2">{{ view['gender']['label'] }}</label>  
+                            <select [(ngModel)]="model.gender" #gender="ngModel" name="gender" >
+                                <option  style="display:none;" >Gender</option>
+                                <option value="Male" class="red">Male</option>
+                                <option value="Female" class="green">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="innersingupdate">
+                        <span class="customlabel">{{ view['location']['label'] }} :</span><br />
+                        <input [(ngModel)]="model.location" #location="ngModel" name="location" type="Text" id="field1" class="customcalandersingup" maxlength="20"  />
+                    </div>
+
+                    <!--<div class="sim-button button16 buttoncustom" >
+                        <span class="buttonnext">
+                            <a href="#" (click)="sf.form.submit();">{{ view['button']['next'] }}</a>
+                        </span>
+                    </div>-->
+                    <button type="submit">{{ view['button']['next'] }}</button>
+
+                </div>
+            </form>
+        </div>
+	</div>    
+    <!-- <pre>{{ view | json }}</pre> -->
+</div>
+
+<!--<div class="col-md-offset-3 col-md-6" *ngIf="signUpFormConf.user">
+    
+    <form name="sign_up_form" (ngSubmit)="sf.form.valid && signUp()" #sf="ngForm"  novalidate>
+        <div class="form-group" [ngClass]="{'has-error': sf.submitted && !mobile.valid}">
+            <label>{{signUpFormConf.user.mobile.label}}</label>
+            <input [(ngModel)]="model.mobile" #mobile="ngModel" class="form-control" type="number" name="mobile" placeholder="{{signUpFormConf.user.mobile.placeholder}}" required />
+            <div *ngIf="sf.submitted && !mobile.valid" class="help-block">{{ signUpFormConf.user.mobile.error.msg }}</div>
+        </div>
+        <div class="form-group" [ngClass]="{'has-error': sf.submitted && !email.valid}">
+            <label>{{signUpFormConf.user.email.label}}</label>
+            <input class="form-control" [(ngModel)]="model.email" #email="ngModel" type="email" name="email" placeholder="{{signUpFormConf.user.email.placeholder}}" required />
+            <div *ngIf="sf.submitted && !email.valid" class="help-block">{{ signUpFormConf.user.email.error.msg }}</div>
+        </div>
+        <div class="form-group" [ngClass]="{'has-error': sf.submitted && !password.valid}">
+            <label>{{signUpFormConf.user.password.label}}</label>
+            <input class="form-control" [(ngModel)]="model.password" #password="ngModel" type="password" name="password" placeholder="{{signUpFormConf.user.password.placeholder}}" required />
+            <div *ngIf="sf.submitted && !email.valid" class="help-block">{{ signUpFormConf.user.password.error.msg }}</div>
+        </div>
+        <div class="form-group" [ngClass]="{'has-error': sf.submitted && !pc.valid}">
+            <label>{{signUpFormConf.user.password_confirmation.label}}</label>
+            <input class="form-control" type="password" [(ngModel)]="model.password_confirmation" #pc="ngModel" name="password_confirmation" placeholder="{{signUpFormConf.user.password_confirmation.placeholder}}" required />
+            <div *ngIf="sf.submitted && !pc.valid" class="help-block">{{ signUpFormConf.user.password_confirmation.error.msg }}</div>
+        </div> 
+        <button [disabled]="!sf.form.valid" class="btn btn-block btn-success" type="submit">Sign Up</button>   
+    </form>
+    <pre>
+        {{ signUpFormConf.user | json }}
+    </pre>
+</div>-->

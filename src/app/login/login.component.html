@@ -1,0 +1,70 @@
+<div class="mainbackground">
+        <div class="row">
+            <div id="login" class="maincontainer" *ngIf="view != undefined">
+                <div class="btn-close"><img id="closebtn" src="assets/img/close-icon.png" width="32" height="34"></div>
+                
+                <div class="logo"><img src="assets/img/user_info_icon/icon.png"/></div>
+                <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+                    <div class="maindiv">
+                        <div class="email" [ngClass]="{ 'has-error': f.submitted && !email.valid }">
+                        <span class="correctsign"></span>
+                        <input class="inputMaterialone" type="text" name="email" spellcheck="false" [(ngModel)]="model.email" #email="ngModel" required>
+                        <label>{{ view["email-mobile"]["label"] }}</label>
+                        <span *ngIf="f.submitted && !email.valid" class="error"><p id="name_error">{{ view["email-mobile"]["error"]["msg"] }}</p></span>
+                        </div>
+                        
+                        <div class="password" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+                        <span class="eyesign"><img src="assets/img/eye-icon.png" width="21" height="11" class="eye-icon"/></span>      
+                        <input class="inputMaterialone" type="password" name="password" maxlength="20" [(ngModel)]="model.password" #password="ngModel" required>
+                        <label class="loginlabel">{{ view["password"]["label"] }}</label>
+                        <span *ngIf="f.submitted && !password.valid" class="error"><p id="name_error">{{ view["password"]["error"]["msg"] }}</p></span>
+                        </div>
+                        
+                        <button class="buttoncustom" type="submit">{{ view.button.save }}</button>
+                        
+                        <div class="check">
+                            <p class="checkinfo">
+                            <input type="checkbox" id="test1"/>
+                            <label class="loginlabel" for="test1">Remember my password</label>
+                            </p>
+                        </div>
+                        <!--{{ view | json }}-->
+                        <div class="link-bottom">
+                            <ul>
+                                <li>
+                                    <a href="#">{{ view.a["login-with-otp"] }}</a>
+                                </li>
+                                <li>
+                                    <a href="#">{{ view.a.forgot }}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+</div>    
+
+    <!--<div class="col-md-6 col-md-offset-3">
+    <div class="alert alert-info">
+        Username: clicknpick@gmail.in<br />
+        Password: 123456
+    </div>
+    <h2>Login</h2>
+    <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+        <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !email.valid }">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" required />
+            <div *ngIf="f.submitted && !email.valid" class="help-block">Email is required</div>
+        </div>
+        <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required />
+            <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+        </div>
+        <div class="form-group">
+            <button [disabled]="loading" class="btn btn-primary">Login</button>
+        </div>
+        <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+    </form>
+</div>-->
